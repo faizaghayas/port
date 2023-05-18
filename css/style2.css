@@ -1,0 +1,1905 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../img2/back\ background\ 2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.bttn-toggle{
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+/* ---------navbar--------- */
+
+header{
+    width: 100%;
+    height: 60px;
+    background-image: url(../img2/space\ back\ \ final.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13px;
+}
+.port{
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 2.3rem;  
+        font-weight: 800;
+        letter-spacing: 4px;
+        -webkit-text-stroke-color:#3e1a47;
+    -webkit-text-stroke-width: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+
+
+.lio{
+    color:#3e1a47;
+    outline: 2px white;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-top:-2px ;
+    -webkit-text-stroke-color:white;
+    -webkit-text-stroke-width: 0.3px;
+}
+.dot{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.8rem;  
+    font-weight: 800;
+    letter-spacing: 4px;
+    -webkit-text-stroke-color:#3e1a47;
+    -webkit-text-stroke-width: 2px;
+}
+.nav-ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.nav-line{
+    width: 60px;
+    height: 2px;
+    background-color: #00acc1;
+    margin-left: 10px;
+    display: none;
+}
+.nav-li .active{
+    border-bottom: 2px solid #00acc1;
+    padding: 4px  9px;
+}
+.nav-li:hover .nav-line{
+    display: block;
+    animation-name: nav-line;
+    animation-duration: 0.6s;
+    animation-iteration-count: 1;
+}
+@keyframes nav-line{
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 60px;
+    }
+    
+}
+.nav-li{
+    height: 30px;
+}
+.nav-li a{
+    color: #ffffff;
+    font-size: 0.9rem;
+    text-decoration: none;
+    padding: 0 15px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.bars{
+    display: none;
+}
+@media only screen and (max-width:1320px){
+    header{
+        padding: 0 50px;
+    }
+}
+@media only screen and (max-width:1120px){
+    header{
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width:990px){
+    header{
+        height: 60px;
+        background:#100028;
+    }
+    .bars{
+        display: block;
+        margin-top: 35px;
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        top:-26px;
+    }
+    .line{
+        width: 32px;
+        height: 4px;
+        background-color: white;
+        margin: 7px;
+    }
+    .line2{
+        display: block;
+        width: 100%;
+        margin: auto;
+        height: 0.5px;
+        background-color: #00000036;
+        margin: 5px;
+        transition: width 0.5s ease-in;
+    }
+    .navbar{
+        height: 0px ;
+        position: absolute !important;
+        top: 60px ;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        overflow: hidden;
+        transition: 0.5s;
+        z-index: 9999;
+        background:#14052b;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.329);
+    }
+    .navbar.active{
+        height: 400px !important;
+    }
+    .nav-ul{
+        display: block;
+        width: fit-content;
+        margin:auto;
+        padding: 0;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .navbar.active ul{
+        opacity: 1;
+    }
+    .nav-ul .nav-li{
+        height: 50px;
+        letter-spacing: 2px;
+        padding: 10px;
+        padding-bottom: 10px ;
+    }
+    .nav-ul .nav-li a {
+        margin-top: 0;
+        margin-bottom: 1px !important;
+    }
+}  
+/* --------navbar----------- */
+.back{
+    width: 100%;
+    height: 550px;
+    background-image: url(../img2/space\ back\ \ final.png);
+    background-repeat: no-repeat;
+    background-size: 100% 110% ;
+    background-position: bottom ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 90px;
+    
+}
+.back-content1{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 100px 20px;
+}
+.back-hd1{
+    font-size:1rem;
+    color: white;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    line-height:20px;
+    padding:  0 20px;
+
+}
+.back-hd2{
+    font-size:3rem;
+    color: white;
+    letter-spacing: 4px;
+    word-spacing: 4px;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    line-height: 60px;
+
+}
+
+#typewriter{
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    text-transform: uppercase;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #00acc1; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 0; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.3rem; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end) ,
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 52% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+  .secondary-bttn{
+    width: 200px;
+    height:40px;
+    color:white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;  
+    margin-top: 30px;
+    
+}
+.secondary-bttn h3{
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.secondary-bttn .primary-bttn-1{
+    width: 30px;
+    height: 30px;
+    border: none;
+    outline: none;   
+    border-top: 2px solid #00bfe7;
+    border-left: 2px solid #00bfe7;
+    background: none;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    
+}
+.secondary-bttn .primary-bttn-2{
+    width:30px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-bottom:2px solid #00c1e7b4;
+    border-right: 2px solid #00c1e7b4;
+    background: none;
+    padding: 10px 0;
+    margin-top:5px;
+    
+}
+.secondary-bttn:hover .primary-bttn-2,.secondary-bttn:hover .primary-bttn-1{
+    animation: border-color 1.2s infinite 0.2s ;
+}
+@keyframes border-color {
+    0%{
+    border-color: #00c1e7b4;
+    }
+    30%{
+        border-color: #af4780d0;
+    }
+    50%{
+    border-color: #3e1a47;
+    }
+    80%{
+        border-color: #3a2b53;
+    }
+    100%{
+    border-color: #00c1e7b4;
+
+    }
+}
+.cartoons{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 110px;
+}
+.back-content2{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.astronaut{
+    width: 330px;
+    height: 330px;
+    background-image: url(../img2/astronaut\ 5.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    margin-left: -150px;
+    position: relative;
+    top: 120px;
+    z-index: 1;
+    animation: astronaut 3s infinite ;
+}
+@keyframes astronaut {
+    0%{
+        top: 120px;
+    }
+    50%{
+        top: 150px;
+    }
+    100%{
+        top: 120px;
+    }
+}
+.planet{
+    width: 280px;
+    height: 280px;
+    background-image: url(../img2/planet2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(-70deg);
+    margin-bottom: 40px;
+}
+@media only screen and (max-width:960px){
+    .back{
+        height: 500px;
+        background-size: 150.8% 132.5%;
+        padding: 0 30px;
+    }
+    .back-content1{
+        padding: 80px 20px;
+    }
+    .back-hd1{
+    font-size: 0.8rem;
+    }
+    .back-hd2{
+    font-size: 2.4rem;
+    line-height: 60px;
+    }
+    #typewriter{
+    font-size: 2.4rem;
+
+    }
+    .planet{
+        width: 230px;
+        height: 230px;
+    }
+    .astronaut{
+        width: 280px;
+        height: 280px;
+    }
+} 
+@media only screen and (max-width:660px){
+    .back{
+        height: 500px;
+        background-size: 150.8% 132.5%;
+    }
+    .back-content{
+        padding: 120px 50px;
+    }
+    .back-hd1{
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    word-spacing:1px;
+    }
+    .back-hd2{
+    font-size: 2rem;
+    letter-spacing: 4px;
+    word-spacing:2px;
+    line-height: 50px;
+    font-weight: 700;
+    }
+    .secondary-bttn{
+        margin-top:20px ;
+    }
+    #typewriter{
+        font-size: 2rem;
+        letter-spacing: 2px;
+        width: 150%;
+            animation: typing 1.5s 1;
+            border: none;
+        }
+    .planet{
+        width: 200px;
+        height: 200px;
+    }
+    .astronaut{
+        width: 260px;
+        height: 260px;
+    }
+} 
+@media only screen and (max-width:470px){
+    .back{
+        height: 450px;
+        background-size: 180.8% 122.5%;
+    }
+    .back-content1{
+        width: 80%;
+        padding: 100px 30px;
+    }
+    .back-content2{
+        display: none;
+    }
+    .back-hd1{
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    word-spacing:1px;
+    }
+    .back-hd2{
+    font-size: 2.1rem;
+    letter-spacing: 3px;
+    word-spacing:2px;
+    line-height: 50px;
+    font-weight: 700;
+    }
+    #typewriter{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    animation: none !important;
+    border: none;
+    }
+    .secondary-bttn{
+        margin-top:20px ;
+    }
+    .icon-holder{
+        margin:20px 0  ;
+    }
+}
+@media only screen and (max-width:385px){
+    .back{
+        height: 450px;
+        background-size: 180.8% 122.5%;
+    }
+    .back-content1{
+        width: 100%;
+        padding: 100px 40px;
+    }
+    .back-hd1{
+    font-size: 0.6rem;
+    letter-spacing:1px;
+    word-spacing:1px;
+    }
+    .back-hd2{
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    word-spacing:1px;
+    line-height: 60px;
+    font-weight: 700;
+    }
+    #typewriter{
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+        width: 150%;
+            animation: typing 1.5s 1;
+            border: none;
+        }
+    .secondary-bttn{
+        margin-top:20px ;
+    }
+} 
+/* ------------------main1----------- */
+.main-1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-1-half-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding: 10px 70px;
+}
+.main-1-hd-1{
+    color: white;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    word-spacing: 2px;
+}
+.main-1-hd-2{
+    color: white;
+    font-size: 2.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 3px;
+    word-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.main-1-line{
+    width: 30%;
+    height: 4px;
+    background: #00bfe7;
+    margin-right: auto;
+    margin-left: 25px;
+}
+
+
+.main-1-para{
+    color: #ffffff63;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.9rem;
+    padding: 30px 0px;
+    padding-right: 16px;
+    letter-spacing: 1px;
+}
+.main-1-secondary-bttn{
+    width: 200px;
+    height:40px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;  
+}
+.main-1-secondary-bttn h3{
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-1-secondary-bttn .main-1-primary-bttn-1{
+    width: 30px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-top: 2px solid #00bfe7;
+    border-left: 2px solid #00bfe7;
+    background: none;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    
+}
+.main-1-secondary-bttn .main-1-primary-bttn-2{
+    width:30px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 10px 0;
+    margin-top:5px;
+    
+}
+.animation{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 0 260px;
+    align-items: center;
+    animation: rocket 1.5s infinite 1s;
+    position: relative;
+    left: -13%;
+    top: 60px;    
+}
+@keyframes rocket {
+    0%{
+        left: -13%;
+        top: 60px;    
+
+    }
+    50%{
+        top: 53px;
+
+    }
+    70%{
+        display: none !important;   
+    }
+    100%{
+        display: none !important;   
+    }
+}
+@media only screen and (max-width:1360px){
+    .animation{
+        display: none;  
+    }
+}
+/* ----------------cards section------------- */
+.main-1-half-2{
+    width: 97%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,18rem);
+    gap: 20px;
+    justify-content: center;
+    margin-left: auto;
+    padding: 70px 0;
+}
+.main-1-card{
+    height: 250px;
+    border-radius: 10px;
+    background: linear-gradient(80deg,  #3a2b53,#473355 ) !important;
+    padding: 0 20px;
+}
+.main-1-icon{
+    color: #ffffff;
+    font-size: 1.8rem;
+}
+.icon-holder{
+    width: 65px;
+    text-align: center;
+    padding: 16px 0;
+    /* border: 2px solid #00bfe7; */
+
+}
+.main-1-card:hover .icon-holder{
+    transform: rotate(45deg);
+    transition: 0.3s;
+}
+.main-1-card:hover .main-1-icon,.main-1-card:hover .main-1-icon2{
+    transform: rotate(-45deg);
+}
+.main-1-icon2{
+    color: #ffffff;
+    transform: rotate(-4deg);
+    font-size: 1.5rem;
+}
+.main-1-card-hd{
+    font-size: 1.3rem;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    -webkit-text-stroke-color:#af4781 ;
+    -webkit-text-stroke-width: 0.2px;
+}
+.main-1-line-2{
+    width: 22%;
+    height: 3px;
+    background: linear-gradient(60deg, #af4781 , #412f5f ) !important;
+    margin-right: auto;
+    margin-left: 5px;
+    margin-bottom:10px;
+}
+.main-1-card-para{
+    font-size: 0.8rem;
+    color: #ffffff63;
+    line-height: 25px;
+    padding-right: 0px;
+    letter-spacing: 0.6px;
+}
+/* ----------------cards section------------- */
+@media only screen and (max-width:640px){
+.main-1-half-2{
+    width: 95%;
+    margin-left: auto;
+    grid-template-columns: repeat(2,18rem);
+    gap: 0px;
+}
+.main-1-card{
+    margin-top: 30px;
+}
+} 
+@media only screen and (max-width:570px){
+    .main-1-half-2{
+        width: 95%;
+        margin-left: auto;
+        grid-template-columns: repeat(2,15rem);
+        gap: 20px;
+    }
+    .main-1-card{
+        margin-top: 60px;
+    }
+    .icon-holder{
+        width: 50px;
+        height: 45px;
+        padding-top: 8px;
+        
+    }
+    .main-1-icon{
+        font-size: 1.1rem;
+
+    }
+    .main-1-icon2{
+        font-size: 1.1rem;
+    }
+    } 
+    @media only screen and (max-width:510px){
+        .main-1-half-1{
+            padding: 20px 10px;
+        }
+        .main-1-hd-1{
+            font-size: 0.8rem;
+        }
+        .main-1-hd-2{
+            font-size: 1.8rem;
+        }
+        .main-1-half-2{
+            width: 95%;
+            margin-left: auto;
+            grid-template-columns: repeat(1,minmax(18rem,23rem));
+            gap: 0px;
+        }
+        .main-1-card{
+            margin-top: 20px;
+        }
+        .icon-holder{
+            width: 50px;
+            height: 45px;
+            padding-top: 8px;
+            
+        }
+        .main-1-icon{
+            font-size: 1.1rem;
+    
+        }
+        .main-1-icon2{
+            font-size: 1.1rem;
+        }
+        } 
+        @media only screen and (max-width:400px){
+            .main-1-half-1{
+                padding: 20px 20px;
+            }
+            .main-1-hd-1{
+                font-size: 0.8rem;
+            }
+            .main-1-hd-2{
+                font-size: 1.6rem;
+            }
+            .main-1-half-2{
+                width: 95%;
+                margin-left: auto;
+                grid-template-columns: repeat(1,minmax(15rem,20rem));
+                gap: 20px;
+            }
+            .main-1-card{
+                margin-top: 0px;
+            }
+            .main-1-card-hd{
+                font-size: 1.1rem;
+                margin-bottom: 0px;
+            }
+            .icon-holder{
+                width: 40px;
+                height: 35px;
+                padding-top: 2px;
+                
+            }
+            .main-1-icon{
+                font-size: 0.8rem;
+        
+            }
+            .main-1-icon2{
+                font-size: 0.8rem;
+            }
+            } 
+            @media only screen and (max-width:350px){
+                .main-1-half-1{
+                    padding: 20px 20px;
+                }
+                .main-1-hd-1{
+                    font-size: 0.8rem;
+                }
+                .main-1-hd-2{
+                    font-size: 1.3rem;
+                }
+                .main-1-half-2{
+                    width: 95%;
+                    margin-left: auto;
+                    grid-template-columns: repeat(1,minmax(10rem,16rem));
+                    gap: 0px;
+                }
+                .main-1-card{
+                    margin-top: 20px;
+                }
+                .icon-holder{
+                    width: 40px;
+                    height: 35px;
+                    padding-top: 8px;
+                    
+                }
+                .main-1-icon{
+                    font-size: 0.8rem;
+            
+                }
+                .main-1-icon2{
+                    font-size: 0.8rem;
+                }
+                } 
+/* -------------------main1------------------- */
+/* -------------------main2------------------- */
+
+.main-2-hd-1{
+    font-size: 1.8rem;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+}
+
+.main-2-line{
+    width: 5%;
+    height:4px;
+    background-color: #00bfe7;
+    text-align: center;
+    margin-left: 43.8%;
+}
+.main-2{
+
+}
+.container{
+    background: none;
+}
+.main-2 .nav-link{
+    color: white;
+    background-color: transparent;
+    border-radius: 10px;
+    height: 25px;
+    font-size: 0.8rem;
+    padding-top: 2px;
+}
+.col-md-6{
+    width: 33.33333333%;
+
+}
+.main-2 .main-2-img{
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+}
+.main-2-img img{
+    width:100%;
+    border-radius: 10px;
+}
+.main-2 .nav-link.active{
+    color: white;
+    background: linear-gradient(80deg ,#b64d9fb6 ,#160531e1);
+    border-radius: 10px;
+    height: 25px;
+    width: 100px;
+
+    font-size: 0.8rem;
+    padding:  10px;
+    padding-top: 2px;
+}
+.tabs-nav{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 300px;
+    
+    
+}
+.nav-item{
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    
+}
+.main-2-img .hover-img{
+    position: absolute;
+    left: 0%;
+    top:0%; 
+    height: 100%;
+    width: 100%;
+    transition: all .4s ease-in-out 0s;
+    opacity: 0.2;
+    border-radius: 10px;
+
+} 
+
+.main-2-img:hover .hover-img{
+    background: linear-gradient(20deg ,#af4780b0 ,#462779ad);
+    opacity: 0.4;
+    height: 100%;
+    width: 100%;
+}
+.hover-img .main-2-icon{
+    font-size: 2.2rem;
+    color: white;
+    position: relative;
+    top: 48%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .4s ease-in-out 0s;
+
+}
+.main-2-img:hover .hover-img .main-2-icon{
+    opacity: 2;
+    top: 50%;
+    left: 50%;
+}
+
+@media only screen and (max-width:900px){
+    .card-padding{
+        padding-top: 20px !important;
+
+    }
+    .col-md-6{
+        padding: 10px;
+    }
+    .main-2-hd-1{
+        font-size: 1.5rem;
+    }
+    .tabs-nav{
+        width: 0;
+    }
+    body{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
+/* -------------------main2------------------- */
+/* ---------------main 3-------------- */
+.main3{
+    width: 85%;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #0a0a0a;
+    filter: drop-shadow(0 0.3rem 0.8rem #100028) ; 
+    border-radius: 20px;
+    margin: auto;
+    
+}
+.main3part1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.main3hd1{
+    font-size: 0.8rem;
+    color: white;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 4px;
+    word-spacing: 3px;
+}
+.main3hd2{
+    font-size: 2rem;
+    color:white;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+}
+.main-3-line{
+    width: 6%;
+    height:4px;
+    background-color: #00bfe7;
+    margin-left: -6.8%;
+    
+}
+.main3part2{
+    max-width: 1100px;
+    width: 80%;
+    margin: 10px;
+    position: relative;
+}
+.main3card{
+    height: 280px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.carousel-card{
+    display: grid;
+    grid-auto-flow:column;
+    grid-auto-columns: calc((68% / 2) - 11px);
+    gap: 5px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+
+.main-3-arrow-right , .main-3-arrow-left{
+    color:white;
+    font-size: 1rem;
+    width: 40px;
+    height:40px;
+    background-color: #000000af;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    font-size: 1.25rem;
+    transform: translateY(-50%);
+    box-shadow: 0px 3px 6px #0000009d;
+}
+.main-3-arrow-left{
+    left:-22px;
+}
+.main-3-arrow-right{
+    right: -22px;
+}
+.main3hd{
+    height: 60px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    font-size: 1rem;
+}
+.main3duration{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+
+}
+.main3box1{
+    width: 50%;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right:0.1em solid #ffffff3f ;
+}
+.main3hd4{
+    font-size: 1.1rem;
+    color: #fffffff1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    text-align: center;
+    
+}
+.main3hd5{
+    font-size: 0.6rem;
+    color: #ffffff77;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+    
+}
+.main3box2{
+    width: 50%;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.textcolor{
+    fill: white;
+    font-weight: 600;
+}
+@media only screen and (max-width:900px){
+    .carousel-card{
+    grid-auto-columns: calc((100% / 3) - 9px);
+    }
+}
+@media only screen and (max-width:600px){
+    .carousel-card{
+    grid-auto-columns: 100% ;
+    }
+}
+@media only screen and (max-width:800px){
+    .main2hd1{
+        font-size: 0.7rem;
+    }
+
+    .main2hd2{
+        font-size: 1.8rem;
+    }
+    .main2part2{
+        grid-template-columns: repeat(auto-fit, minmax(18rem,30rem));
+    }
+    .main2card{
+        height: 170px;
+        margin: 20px;
+    }
+    .main2cardhd{
+        font-size: 1rem;
+    }
+    .main2cardtext{
+        font-size: 0.5rem;
+        line-height: 15px;
+    }
+    .main2icon{
+        font-size: 0.8rem;
+    }
+    .main2icon2{
+        font-size: 0.8rem;
+    }
+}
+ /* ---------------main 3-------------- */
+/* --------------progress bar plugin ------------ */
+.circle-chart {
+    width: 150px !important;
+    height: 150px !important;
+    }
+
+.circle-chart-circle {
+    stroke: url( #gradient1);
+    stroke-width: 2.5;
+    stroke-linecap: square;
+    fill: none;
+    animation: circle-chart-fill 2s reverse; /* 1 */ 
+    transform: rotate(-90deg); /* 2, 3 */
+    transform-origin: center; /* 4 */
+    stroke-linecap: round;
+}
+/**
+   * 1. Rotate by -90 degree to make the starting point of the
+   *    stroke the top of the circle.
+   * 2. Scaling mirrors the circle to make the stroke move right
+   *    to mark a positive chart value.
+   * 3. Using CSS transforms on SVG elements is not supported by Internet Explorer
+   *    and Edge, use the transform attribute directly on the SVG element as a
+   * .  workaround.
+   */
+
+.circle-chart__circle--negative {
+    transform: rotate(-90deg) scale(1,-1); /* 1, 2, 3 */
+}
+.circle-chart-background {
+    stroke: #0a0707;
+    stroke-width: 0;
+    fill: none; 
+    border: none;
+    
+}
+
+.circle-chart__percent{
+    alignment-baseline: central;
+    text-anchor: middle;
+    font-size: 0.4rem;
+    color: white !important;
+    background: white !important;
+}
+text{
+    color: #ffffff !important;
+    background: #ffffff !important;
+}
+.circle-chart__subline {
+    alignment-baseline: central;
+    text-anchor: middle;
+    font-size: 0.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+}
+
+.stroke{
+    fill: #0a0707;
+}
+
+@keyframes circle-chart-fill {
+    to { stroke-dasharray: 0 100; }
+}
+
+@keyframes circle-chart-appear {
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+@media only screen and (max-width:800px){
+    .main3hd1{
+        font-size: 0.7rem;
+    }
+    .main3hd2{
+        font-size: 2.2rem;
+    }
+    .main3hd3{
+        font-size: 0.5rem;
+    }
+    .main3part2{
+        grid-template-columns: repeat(auto-fit,minmax(18rem,32rem));
+        width: 85%;
+    }
+}
+/* --------------progress bar plugin ------------ */
+/* -------------main4------------ */
+.main4{
+    width: 100%;
+    height: 310px;
+    background-image: url(../img2/space\ back.PNG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+    z-index: -9999;
+    border: none;
+    outline: none;
+}
+.main4part1{
+    width: 50%;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px  0;
+}
+.main4hd1{
+    font-size: 2.2rem;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    word-spacing: 2px;
+}
+.main4hd2{
+    font-size:0.7rem;
+    color: #ffffffe1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 25px;
+    text-transform: capitalize;
+    word-spacing: 2px;
+}
+.main-4-secondary-bttn{
+    width: 180px;
+    height:40px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;  
+    padding: 30px 0 ;
+}
+.main-4-secondary-bttn h3{
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-4-secondary-bttn .main-4-primary-bttn-1{
+    width: 30px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-top: 2px solid #00bfe7;
+    border-left: 2px solid #00bfe7;
+    background: none;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    
+}
+.main-4-secondary-bttn .main-4-primary-bttn-2{
+    width:30px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #00bfe7;
+    border-right: 2px solid #00bfe7;
+    background: none;
+    padding: 10px 0;
+    margin-top:5px;
+    
+}
+
+.main4part2{
+    width: 50%;
+    height: 310px;
+    background-image: url(../img2/astronaut\ 2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:57%;
+    z-index: 9999;
+    animation: main4part2 1.2s infinite  0.2s;
+
+}
+@keyframes main4part2 {
+    50%{
+        margin-top: -20px;
+        margin-right: -3px;
+    }
+}
+@media only screen and (max-width:950px){
+    .main4hd1{
+        font-size: 1.6rem;
+        padding: 0 5px;
+
+    }
+    .main4hd2{
+        font-size:0.5rem ;
+        padding: 0 10px;
+    }
+    .main4bttn{
+        width: 120px;
+        height: 30px;
+        font-size: 0.9rem;
+
+    }
+    .main4part2{
+        height: 260px;
+        background-size: cover;
+    }
+}
+@media only screen and (max-width:680px){
+    .main4{
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+    }
+    .main4hd1{
+        font-size: 1.4rem;
+        padding: 0 5px;
+
+    }
+    .main4hd2{
+        font-size:0.3rem ;
+        line-height: 20px;
+        padding: 0 10px;
+    }
+    .main4bttn{
+        width: 120px;
+        height: 30px;
+        font-size: 0.6rem;
+        
+    }
+    .main4part2{
+        height: 260px;
+        background-size: cover;
+
+    }
+}
+@media only screen and (max-width:550px){
+    .main4{
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+    }
+    .main4part1{
+        width: 100%;
+    }
+    .main4hd1{
+        font-size: 1.6rem;
+        padding: 0 5px;
+
+    }
+    .main4hd2{
+        font-size:0.6rem ;
+        padding: 0 10px;
+    }
+    .main4bttn{
+        width: 160px;
+        height: 30px;
+        font-size: 0.7rem;
+        
+    }
+    .main-4-secondary-bttn{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .main4part2{
+        display: none;
+    }
+}
+/* -------------main4------------ */
+
+
+
+
+
+
+
+/* ----------main6-------- */
+.main6{
+    width: 80%;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: auto;
+}
+.main6part1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main6part2{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+}
+.main6hd1{
+    color: #54837bad;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    font-size:0.7rem;
+}
+.main6hd2{
+    color:black;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2.2rem;
+    text-transform: capitalize;
+
+}
+.main6hd3{
+    color:#00000081;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 0.6rem;
+    text-transform: capitalize;
+    
+}
+
+.main6box1{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    padding-top: 20px;
+}
+
+
+.inp1{
+    width: 100%;
+    height: 40px;
+    margin:5px ;
+    border-radius: 3px;
+    border: none;
+    border-bottom: 1px solid #54837bad;
+
+}
+.inp1::placeholder,.inp2::placeholder{
+    font-size: 0.8rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #000000ad;
+    float: left;
+    padding:5px 0 12px 20px;
+    
+    
+}
+.inp2{
+    width: 100%;
+    height:50px;
+    margin:5px ;
+    border-radius: 3px;
+    border: none;
+    border-bottom: 1px solid #54837bad;
+
+}
+#message{
+    height: 150px;
+}
+.main6bttn{
+    width: 160px;
+    height: 35px;
+    color: white;
+    border-radius: 5px;
+    background-color: #54837b;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    margin-left:120px;
+    margin-top: 20px;
+}
+.inp1:focus,.inp2:focus{
+    border:3px solid #54837b;
+    outline: #54837b;
+}
+
+
+.main6box2{
+    width: 40%;
+    height:240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: baseline;
+}
+.main6details{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.main6part3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.part3bttn{
+    width: 30px;
+    height: 30px;
+    background-color: #54837b;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 4px 4px 3px;
+    border: none;
+    outline: none;
+}
+.main6part4{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: baseline;
+}
+.part4hd1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    text-align: left;
+    color: black;
+    padding:0 5px;
+}
+.part4hd2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 0.7rem;
+    text-align: left;
+    color: #54837bd8;
+    padding:0 5px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    width: 340px;
+
+}
+
+/* ----------main6-------- */
+/* ----------main7-------- */
+.main7{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.main7bttn{
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(40deg, #615377, #66587e);
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+*{
+    text-decoration: none !important;
+}
+.main7icon{
+    font-size: 1.6rem;
+    color: white;
+    animation-name: main7icon;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    margin-top: 4px;
+
+}
+@keyframes main7icon{
+    0%{
+    margin-top: 2px;
+    } 
+    50%{
+        margin-top: -12px;
+        }
+    100%{
+            margin-top: 2px;
+        }
+}
+
+/* ----------main7-------- */
+
+.container{
+    width: 80% !important;
+    background: #ffffff;
+    border-radius: 6px;
+    padding: 20px 60px 30px 40px;
+    margin: auto;
+}
+#contact-container{
+    background: linear-gradient(60deg, #af4781 , #412f5f,#462779 ) !important;
+}
+.container .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .content .left-side{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+}
+.content .left-side::before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -47%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #00acc1;
+  }
+  .left-side-img{
+    width: 300px;
+
+  }
+  .left-side-img img{
+    width: 350px;
+    /* -webkit-transform: scaleX(-1);
+    transform: scaleX(-1); */
+  }
+  .content .left-side .details .text-one,
+  .content .left-side .details .text-two{
+    font-size: 14px;
+    color: white;
+  }
+  .container .content .right-side{
+    width: 60%;
+    margin-left: 3px;
+  }
+  .content .right-side .topic-text2{
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    color:white;
+    text-align: center;
+
+    letter-spacing: 2px;
+  }
+  .content .right-side .topic-text{
+    font-size: 2.2rem;
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+  }
+  .right-side .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+    background-color :transparent!important;
+  }
+  .right-side .input-box input,
+  .right-side .input-box textarea{
+    height: 100%;
+    width:95%;
+    border: none;
+    outline: none;
+    font-size: 0.8rem;
+    border: 2px solid #a3b3b098;
+    background: transparent!important;
+    border-radius: 10px;
+    padding: 0 15px;
+    resize: none;
+  }
+  .right-side .message-box2{
+    min-height: 110px;
+  }
+  .message-box2 input::placeholder , .input-box input::placeholder{
+    float: left;
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  .right-side .input-box textarea{
+    padding-top: 6px;
+  }
+  .right-side .button{
+    display: inline-block;
+    margin-top: 12px;
+  }
+  .right-side .button input[type="button"]{
+    color: black;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    background: white;
+    cursor: pointer;
+    width: 130px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+  }
+  .button input[type="button"]:hover{
+    background: #54837bad;
+  }
+@media (max-width: 950px) {
+    .container{
+    width: 90%;
+    padding: 30px 40px 40px 35px ;
+    }
+    .container .content .right-side{
+    width: 75%;
+    margin-left: 55px;
+}
+}
+@media (max-width: 820px) {
+    .container{
+    margin: 40px 0;
+    height: 100%;
+    }
+    .container .content{
+    flex-direction: column-reverse;
+    }
+.container .content .left-side{
+    width: 100%;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container .content .left-side::before{
+    display: none;
+}
+.container .content .right-side{
+    width: 100%;
+    margin-left: 0;
+}
+}
+@media only screen and (max-width: 850px){
+    .container{
+        margin: auto;
+    }
+}
+.container{
+    background: none;
+}
+@media only screen and (max-width:600px){
+    .left-side-img{
+        width: 350px;
+    }
+}
+/* ----------main 8--------- */
+.main8{
+    width: 100%;
+    height: 30px;
+    background-color: #412f5f;
+}
+.mainhd{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-8-hd-1{
+    height: 12px ;
+    color: #ffffffc7;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0 10px;
+    margin-top: 2px;
+    letter-spacing: 0.6px;
+    word-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.main-8-hd-1::after{
+    content: "l";
+    color: white;
+    font-weight: 300;
+    margin-left: 10px;
+}
+.main-8-hd-2{
+    color: #ffffffc7;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 7px;
+    letter-spacing: 0.6px;
+    word-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@media only screen and (max-width:600px){
+    .main-8-hd-1{
+        letter-spacing: 0px;
+        word-spacing: 1px;
+        font-size: 0.7rem;
+        height: 10px;
+    }
+    .main-8-hd-2{
+        letter-spacing: 0px;
+        word-spacing: 1px;
+        font-size: 0.7rem;
+    }
+    .mainhd{
+        height: 30px;
+        background-color:#462779  ;
+    }
+}
+/* ----------main 8--------- */
